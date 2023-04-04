@@ -1,0 +1,550 @@
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: sans-serif;
+}
+.cardone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+.cardone .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardone .image img {
+    width: 100%;
+    transition: .5s;
+}
+.cardone:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardone .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #ffc107;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardone:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardone .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardone .details .left h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardone .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardone .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardone .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardone .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardone .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardone .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.cardtwo {
+    position:absolute;
+    top: 50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    background: #000;
+}
+.cardtwo .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardtwo .image img {
+    width: 100%;
+    transition: .5s;
+}
+.cardtwo:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardtwo .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #4032ff;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardtwo:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardtwo .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardtwo .details .left h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardtwo .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardtwo .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardtwo .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardtwo .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardtwo .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardtwo .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.cardthree {
+    position: absolute;
+    top: 50%;
+    left:80%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+.cardthree .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardthree .image img {
+    width: 100%;
+    transition: .5s;
+}
+.cardthree:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardthree .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #ff0707;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardthree:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardthree .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardthree .details .left h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardthree .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardthree .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardthree .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardthree .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardthree .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardthree .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.cardfour {
+    position: absolute;
+    top: 130%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+.cardfour .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardfour .image img {
+    width: 100%;
+    transition: .5s;
+}
+.cardfour:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardfour .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #10ff08;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardfour:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardfour .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardfour .details .left h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardfour .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardfour .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardfour .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardfour .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardfour .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardfour .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.cardfive {
+    position: absolute;
+    top: 130%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+.cardfive .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cardfive .image img {
+    width: 100%;
+    transition: .5s;
+}
+.cardfive:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.cardfour .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #10ff08;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.cardfour:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.cardfive .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cardfive .details .left h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cardfive .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.cardfive .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.cardfive .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.cardfive .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.cardfive .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.cardfive .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+<!--font awesome bootstrap CDN-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="cardone">
+    <div class="image">
+      <img src="IMG_8085.JPG"/>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Shrushti Gupta<br><span>Team Leader</span></h1>
+        <p>"OURS"</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="cardtwo">
+    <div class="image">
+      <img src="img.jpg"/>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Aaryan AS</h1>
+        <p>"OURS"</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cardthree">
+    <div class="image">
+      <img src="pankaj.jpg"/>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Pankaj<br></h1>
+        <p>"OURS"</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cardfour">
+    <div class="image">
+      <img src="chirag.jpg"/>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Chirag<br></h1>
+        <p>"OURS"</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="cardfive">
+    <div class="image">
+      <img src="prashantjpg.jpg"/>
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>Prashant<br></h1>
+        <p>"OURS"</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
